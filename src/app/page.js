@@ -17,8 +17,16 @@ export default function Home() {
           Colégio Estadual Carlina Barbosa de Deus.{" "}
           </li>
           <li className="tracking-[-.01em] text-center">
-            Projeto de Extensão - UniRios.
+            Projeto de Extensão -
           </li>
+          <a
+          className="block text-center gap-2 hover:underline hover:underline-offset-4 hover:decoration-[#FFF] "
+          href="https://www.unirios.edu.br/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UniRios.
+        </a>
         </ol>
 
         <div className="self-center items-center flex gap-2">
