@@ -23,18 +23,11 @@ export default function Home() {
 
         <div className="self-center items-center flex gap-2">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
             Diretoria
           </a>
           <a
@@ -65,22 +58,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.instagram.com/colegiocarlina/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.bing.com/ck/a?!&&p=0538f1790797b2955a48a4e5d279446527748644717a1e86920583061443e9f5JmltdHM9MTc0MjUxNTIwMA&ptn=3&ver=2&hsh=4&fclid=27b5f247-9bc4-6a6a-3ed9-e7069a936b16&u=a1L21hcHM_Jm1lcGk9MTI3fn5Vbmtub3dufkFkZHJlc3NfTGluayZ0eT0xOCZxPUNvbGVnaW8lMjBFc3RhZHVhbCUyMGRlJTIwMSUyMGUlMjAyJTIwR3JhdXMlMjBDYXJsaW5hJTIwQiUyMGRlJTIwRGV1cyZzcz15cGlkLllONzk5M3gzMDY0NDc4Mzc5MTM4ODYwODc2JnBwb2lzPS05LjQwNTc4MjY5OTU4NDk2MV8tMzguMjE0NzEwMjM1NTk1N19Db2xlZ2lvJTIwRXN0YWR1YWwlMjBkZSUyMDElMjBlJTIwMiUyMEdyYXVzJTIwQ2FybGluYSUyMEIlMjBkZSUyMERldXNfWU43OTkzeDMwNjQ0NzgzNzkxMzg4NjA4NzZ-JmNwPS05LjQwNTc4M34tMzguMjE0NzEmdj0yJnNWPTEmRk9STT1NUFNSUEw&ntb=1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -91,7 +69,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Localização →
         </a>
       </footer>
     </div>
