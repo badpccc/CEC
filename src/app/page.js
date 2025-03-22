@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -23,21 +24,15 @@ export default function Home() {
           className="block text-center gap-2 hover:underline hover:underline-offset-4 hover:decoration-[#FFF] "
           href="https://www.unirios.edu.br/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer" 
         >
           UniRios.
         </a>
         </ol>
 
         <div className="self-center items-center flex gap-2">
-          <a
-            className="hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Diretoria
-          </a>
+        <Link className="hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+          href="/dashboard">Diretoria</Link>     
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#003BA9] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
