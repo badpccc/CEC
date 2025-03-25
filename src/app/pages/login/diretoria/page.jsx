@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function professor() {
+export default function diretoria() {
     return (
-        <main className="flex flex-row w-screen h-screen">
-            <div className="w-screen h-screen">
+        <main>
+            <div>
                 <Image
-                    src="/Logo_Fix.svg"
+                    src="/images.jpg"
                     alt="Logo"
                     width={180}
                     height={38}
                 />
             </div>
-            <div className="flex flex-col w-screen h-screen justify-center items-center">
+            <div>
                 <Image
                     src="/Logo_Fix.svg"
                     alt="Logo"
@@ -20,7 +20,7 @@ export default function professor() {
                     height={38}
                 />
                 <h1>Professor</h1>
-                <form className="flex flex-col justify-center items-center" action="">
+                <form action="">
                     <input type="text" name="" id=""/>
                     <input type="text" name="" id=""/>
                     <button>Login</button>
