@@ -30,10 +30,14 @@ export default function professor() {
                     <input
                         className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
                         placeholder="Senha" type="text" name="" id=""/>
-                    <button className="">Login</button>
-                    <button>Registre-se</button>
+                    <Link href="/pages/dashboard">
+                        <button className="">Login</button>
+                    </Link>
+                    <Link href="/pages/Registro/professor"> 
+                        <button>Registre-se</button>
+                    </Link>
                 </form>
-                <Link href="/RecuperacaoSenha">Esqueceu a senha?</Link>
+                <Link href="/pages/login/RecuperacaoSenha">Esqueceu a senha?</Link>
             </div>
         </main>
     );
