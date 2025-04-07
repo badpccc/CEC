@@ -22,22 +22,24 @@ export default function diretoria() {
                     width={180}
                     height={38}
                 />
-                <h1 className="font-bold text-2xl">Diretoria</h1>
+                <h1 className="font-bold text-2xl">DIRETORIA</h1>
                 <form className="flex flex-col justify-center items-center" action="">
                     <input
-                        className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
-                        placeholder="E-mail: Example@gmail.com" type="text" name="" id=""/>
+                        className="text-center text-white block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
+                        placeholder="E-mail:" type="text" name="" id=""/>
                     <input
-                        className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
-                        placeholder="Senha" type="text" name="" id=""/>
+                        className="text-center text-white block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
+                        placeholder="Senha" type="password" name="" id=""/>
                     <Link href="/pages/dashboard">
-                        <button className="/pages/dashboard">Login</button>
+                        <button className="mt-2 hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto">Login</button>
                     </Link>
                     <Link href="/pages/Registro/diretoria"> 
-                        <button>Registre-se</button>
+                        <button className="mt-2 hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto">Registre-se</button>
                     </Link>
                 </form>
-                <Link href="/pages/login/RecuperacaoSenha">Esqueceu a senha?</Link>
+                    <Link href="/pages/login/RecuperacaoSenha">
+                        <button className="mt-2 hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto">Esqueceu a senha?</button>
+                    </Link>
             </div>
         </main>
     );
