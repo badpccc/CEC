@@ -20,18 +20,18 @@ export default function Home() {
                             E-mail
                         </label>
                         <input className="w-full pl-3 pr-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-600 text-sm border border-slate-200 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="name@mail.com" />
-                        <p id="helper-text-explanation" class="mt-2 text-xs text-gray-500 dark:text-gray-400">Nós nunca vamos compartilhar suas informações. Leia nossa <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Política de Privacidade</a>.</p>
+                        <p id="helper-text-explanation" className="mt-2 text-xs text-gray-500 dark:text-gray-400">Nós nunca vamos compartilhar suas informações. Leia nossa <a href="#" className="font-medium text-blue-600 hover:underline dark:text-blue-500">Política de Privacidade</a>.</p>
                         <label className="py-1">
                             Senha
                         </label>
                         <input className="w-full pl-3 pr-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-600 text-sm border border-slate-200 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="*******" />
-                        <p class="flex items-start mt-2 text-xs text-slate-400">Use ao menos 8 caracteres, um maiúsculo, um minúsculo e um número.</p>  
+                        <p className="flex items-start mt-2 text-xs text-slate-400">Use ao menos 8 caracteres, um maiúsculo, um minúsculo e um número.</p>
                     </div>
 
 
                     <div>
-                        <button class="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Login</button>
-                        <button class="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Registrar</button>
+                        <button className="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Login</button>
+                        <button className="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Registrar</button>
                     </div>
 
                 </form>
