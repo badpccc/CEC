@@ -1,77 +1,46 @@
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
     return (
-        <div
-            className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start ">
-                <Image
-                    className="self-center dark"
-                    src="/Logo_Fix.svg"
-                    alt="Next.js logo"
-                    width={180}
-                    height={38}
-                    priority
-                />
-                <ol className="list-inside text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] ">
-                    <li className="mb-2 tracking-[-.01em] text-center">
-                        Colégio Estadual Carlina Barbosa de Deus.{" "}
-                    </li>
-                    <li className="tracking-[-.01em] text-center">
-                        Projeto de Extensão -
-                    </li>
-                    <a
-                        className="block text-center gap-2 hover:underline hover:underline-offset-4 hover:decoration-[#FFF] "
-                        href="https://www.unirios.edu.br/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        UniRios.
-                    </a>
-                </ol>
+        <main className="w-screen h-screen flex flex-row items-center justify-evenly">
 
-                <div className="self-center items-center flex gap-2">
-                    <Link
-                        className="hover:text-white rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap- hover:bg-[#383838] dark:hover:bg-[#EB373A] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-                        href="/pages/login/diretoria">Diretoria</Link>
-                    <Link
-                        className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#003BA9] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-                        href="/pages/login/professor">Professor</Link>
+
+            <div>
+                <Image src="/Logo_Fix.svg" width={250} height={250}/>
+                <p>! Texto Explicativo !</p>
+            </div>
+
+            <div className="flex flex-col items-center">
+                <form className="flex flex-col items-center">
+                    <h1 className="self-center text-xl font-bold">Login</h1>
+                    <div className="flex flex-col">
+                    
+                        <label className="py-1">
+                            E-mail
+                        </label>
+                        <input className="w-full pl-3 pr-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-600 text-sm border border-slate-200 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="name@mail.com" />
+                        <p id="helper-text-explanation" class="mt-2 text-xs text-gray-500 dark:text-gray-400">Nós nunca vamos compartilhar suas informações. Leia nossa <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Política de Privacidade</a>.</p>
+                        <label className="py-1">
+                            Senha
+                        </label>
+                        <input className="w-full pl-3 pr-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-600 text-sm border border-slate-200 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="*******" />
+                        <p class="flex items-start mt-2 text-xs text-slate-400">Use ao menos 8 caracteres, um maiúsculo, um minúsculo e um número.</p>  
+                    </div>
+
+
+                    <div>
+                        <button class="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Login</button>
+                        <button class="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Registrar</button>
+                    </div>
+
+                </form>
+                
+                <div>
+                    <Link className="hover:underline decoration-sky-500" href="#">Esqueci a Senha</Link>
                 </div>
-            </main>
-            <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-                <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://www.instagram.com/colegiocarlina/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/Instagram.svg"
-                        alt="File icon"
-                        width={16}
-                        height={16}
-                    />
-                    Instagram
-                </a>
-                <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://www.bing.com/ck/a?!&&p=0538f1790797b2955a48a4e5d279446527748644717a1e86920583061443e9f5JmltdHM9MTc0MjUxNTIwMA&ptn=3&ver=2&hsh=4&fclid=27b5f247-9bc4-6a6a-3ed9-e7069a936b16&u=a1L21hcHM_Jm1lcGk9MTI3fn5Vbmtub3dufkFkZHJlc3NfTGluayZ0eT0xOCZxPUNvbGVnaW8lMjBFc3RhZHVhbCUyMGRlJTIwMSUyMGUlMjAyJTIwR3JhdXMlMjBDYXJsaW5hJTIwQiUyMGRlJTIwRGV1cyZzcz15cGlkLllONzk5M3gzMDY0NDc4Mzc5MTM4ODYwODc2JnBwb2lzPS05LjQwNTc4MjY5OTU4NDk2MV8tMzguMjE0NzEwMjM1NTk1N19Db2xlZ2lvJTIwRXN0YWR1YWwlMjBkZSUyMDElMjBlJTIwMiUyMEdyYXVzJTIwQ2FybGluYSUyMEIlMjBkZSUyMERldXNfWU43OTkzeDMwNjQ0NzgzNzkxMzg4NjA4NzZ-JmNwPS05LjQwNTc4M34tMzguMjE0NzEmdj0yJnNWPTEmRk9STT1NUFNSUEw&ntb=1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/globe.svg"
-                        alt="Globe icon"
-                        width={16}
-                        height={16}
-                    />
-                    Localização →
-                </a>
-            </footer>
-        </div>
+            </div>
+
+        </main> 
     );
 }
