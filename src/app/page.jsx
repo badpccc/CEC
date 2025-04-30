@@ -31,7 +31,7 @@ export default function Home() {
 
                     <div>
                         <button className="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Login</button>
-                        <button className="bg-sky-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Registrar</button>
+                        <button className="bg-electric-violet-500 hover:bg-sky-700 rounded-full text-white font-semibold py-2 px-4 mx-1 my-2">Registrar</button>
                     </div>
 
                 </form>
